@@ -31,7 +31,8 @@ const userSchema = new Schema(
 		},
 		profilePic: {
 			type: String,
-			default: 'http://localhost:3005/uploads/avatars/avatar_26.jpg',
+			default:
+				'https://dnd-companion-backend.onrender.com/uploads/avatars/avatar_26.jpg',
 		},
 		passwordChangeAt: {
 			type: Date,

@@ -285,7 +285,9 @@ router.put(
 			const user = await User.findByIdAndUpdate(
 				id,
 				{
-					$set: { profilePic: `http://localhost:3005${filePath}` },
+					$set: {
+						profilePic: `https://dnd-companion-backend.onrender.com${filePath}`,
+					},
 				},
 				{
 					new: true,
